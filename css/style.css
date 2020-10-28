@@ -1,6 +1,6 @@
 body{
-    text-align: center;
-    margin-top: 40px;
+    /* text-align: center; */
+    margin-top: 50px;
     box-sizing: border-box;
     font-family: "Helvetica-Neue", Helvetica, Arial;
 }
@@ -23,20 +23,81 @@ ul li{
     font-size: 22px;
     font-weight: 700;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 10px;
+}
+.inputparameter{
+    display: flex;
+}
+.addtolist{
+    font-size: 16px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    /* display: none; */
+    color: #4d4d4d;
+}
+.addtolist:focus{
+    outline: none;
 }
 .inputplusLi input{
     border: 1px solid #ddd;
     width: 100%;
-    height: 40px;
-    padding: 0px 0px 0px 10px;
+    height: 50px;
+    padding: 0px 0px 0px 15px;
     letter-spacing: 1px;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 .inputplusLi input:focus {
     outline-offset: 0px;
+    outline: none;
 }
 
-/* .namelist{
-    border: 1px solid black;
-    width: 95%;
-} */
+ .namelist{
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+} 
+.namelist li{
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    border: 1px solid #ddd;
+    border-top: 0;
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 0px 0px 15px;
+}
+
+.todotask{
+    flex: 1;
+    padding: 0px 0px 0px 20px;
+    /* -webkit-user-drag: element;
+    user-select: none; */
+    
+}
+.editbutton{
+    margin: 0px 10px 0px 0px;
+}
+.deletebutton{
+    margin: 0px 8px 0px 0px;
+}
+.fa-trash{
+    border: transparent;
+    color: red;
+}
+.item i.co:hover{
+    cursor: pointer;
+}
+.fa-check-circle{
+    color:#6eb200;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color : #ccc;
+}
